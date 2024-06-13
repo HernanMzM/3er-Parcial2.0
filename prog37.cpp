@@ -1,18 +1,28 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-   
-    int matriz[2][2];
-
-    matriz[0][0] = 20; 
-    matriz[0][1] = 20;
-    matriz[1][0] = 30; 
-    matriz[1][1] = 40; 
-    cout << "El dato que hay en la fila 1 y columna 1 es: " << matriz[0][0] << endl;
-    cout << "El dato que hay en la fila 1 y columna 2 es: " << matriz[0][1] << endl;
-    cout << "El dato que hay en la fila 2 y columna 1 es: " << matriz[1][0] << endl;
-    cout << "El dato que hay en la fila 2 y columna 2 es: " << matriz[1][1] << endl;
-
-    return 0;
+int main()
+{
+    int acum1=0, acum2=0;
+    int t,num,i;
+    cout<<"digite el tamano del vector 1";
+    cin>>t;
+    int vector1[t];
+    for(i=1;i<=t;i++){
+        cin>>num;
+        vector1[i]=num;
+        acum1=acum1+vector1[i];
+        
+    }
+    cout<<"digite el tamano del vector 2";
+    cin>>t;
+    int vector2[t];
+    for(i=1;i<=t;i++){
+        cout<<"digite un numero "<<i;
+        cin>>num;
+        vector2[i]=num;
+        acum2=acum2+vector2[i];
+    }
+    int vector3[2];
+    vector3[1]=acum1+acum2;
+    cout<<"resultado total "<<vector3[1];
 }
