@@ -23,7 +23,7 @@ int main() {
   
   for (int i = 0; i < filas; i++) {
     for (int j = 0; j < columnas; j++) {
-      cout << "Matriz[" << i + 1 <<" "<< j + 1 <<" " <<matriz[i][j] <<"]" <<endl;
+      cout << "Matriz[" << i + 1 <<" "<< j + 1 <<" "<< matriz[i][j] <<"]"<< endl;
     }
   }
 
